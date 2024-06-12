@@ -30,6 +30,7 @@ export const test = async (
       apiKey: openAIApiKey,
       organization: undefined,
       provider: "openai",
+      baseURL: undefined,
     })
   );
 

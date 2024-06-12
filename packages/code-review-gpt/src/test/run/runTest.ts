@@ -46,7 +46,8 @@ const runTest = async (
     modelName,
     openAIApiKey,
     undefined,
-    "openai"
+    "openai",
+    undefined
   );
 
   const similarityResponse = await vectorStore.similaritySearchWithScore(

@@ -12,6 +12,7 @@ interface IAIModel {
   apiKey: string;
   retryCount?: number;
   organization: string | undefined;
+  baseURL: string | undefined;
 }
 
 const defaultRetryCount = 3;
@@ -27,7 +28,7 @@ class AIModel {
           openAIApiKey: options.apiKey,
           modelName: options.modelName,
           temperature: options.temperature,
-          configuration: { organization: options.organization },
+          configuration: { organization: options.organization, ...(options.baseURL && { baseURL: options.baseURL })},
         });
         break;
       case "bedrock":

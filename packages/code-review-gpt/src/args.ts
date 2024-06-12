@@ -81,6 +81,11 @@ export const getYargs = async (): Promise<ReviewArgs> => {
       type: "string",
       default: "openai",
     })
+    .option("baseURL", {
+      description: "Base URL to use for AI",
+      type: "string",
+      default: undefined,
+    })
     .command("review", "Review the pull request.")
     .command("configure", "Configure the script.")
     .parseSync();

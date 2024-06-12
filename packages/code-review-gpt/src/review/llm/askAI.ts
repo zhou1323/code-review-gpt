@@ -9,7 +9,8 @@ export const askAI = async (
   modelName: string,
   openAIApiKey: string,
   organization: string | undefined,
-  provider: string
+  provider: string,
+  baseURL: string | undefined
 ): Promise<AskAIResponse> => {
   logger.info("Asking the experts...");
 
@@ -19,6 +20,7 @@ export const askAI = async (
     apiKey: openAIApiKey,
     organization,
     provider,
+    baseURL
   });
 
   const feedbacks = await processFeedbacks(model, prompts);

@@ -34,6 +34,7 @@ export const review = async (
   const reviewType = yargs.reviewType;
   const organization = yargs.org;
   const provider = yargs.provider;
+  const baseURL = yargs.baseURL;
 
   const filteredFiles = filterFiles(files);
 
@@ -64,7 +65,8 @@ export const review = async (
     modelName,
     openAIApiKey,
     organization,
-    provider
+    provider,
+    baseURL
   );
 
   logger.debug(`Markdown report:\n ${response}`);

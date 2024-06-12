@@ -45,6 +45,7 @@ export type ReviewArgs = {
   org: string | undefined;
   remote: string | undefined;
   provider: string;
+  baseURL: string | undefined;
   _: (string | number)[];
   $0: string;
 };
