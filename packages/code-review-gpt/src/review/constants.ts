@@ -32,7 +32,11 @@ export const modelInfo = [
   },
   {
     model: "deepseek-chat",
-    maxPromptLength: 21000, //8k tokens
+    maxPromptLength: 300000, //128k tokens
+  },
+  {
+    model: "deepseek-coder",
+    maxPromptLength: 300000, //128k tokens
   }
 ]; // Response needs about 1k tokens ~= 3k characters
 

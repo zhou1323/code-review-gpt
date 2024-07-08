@@ -1,9 +1,9 @@
 {
-  "name": "code-review-gpt",
-  "version": "0.1.8",
-  "description": "Your AI code reviewer. Improve code quality and catch bugs before you break production",
+  "name": "private-reviewer",
+  "version": "0.0.2",
+  "description": "An AI code reviewer.",
   "bin": {
-    "code-review-gpt": "./dist/index.js"
+    "private-reviewer": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,20 +20,8 @@
     "publish-package": "npm i && npm run build && npm publish --access public"
   },
   "keywords": [
-    "code-review",
-    "review",
-    "chatgpt",
-    "gpt",
-    "gpt3",
-    "openai",
-    "gpt4",
-    "vertexai",
-    "huggingface",
-    "ai",
-    "genai",
-    "llama"
   ],
-  "author": "Matt Carey",
+  "author": "zhou1323",
   "license": "MIT",
   "dependencies": {
     "@actions/github": "^5.1.1",
